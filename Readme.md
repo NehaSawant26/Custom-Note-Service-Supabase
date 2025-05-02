@@ -1,6 +1,6 @@
-# 2-Hour Supabase Mini–Project – Custom Note Service
+# Supabase – Custom Note Service
 
-a minimal Supabase backend for a personal “notes” service
+A minimal Supabase backend for a personal “notes” service
 
 ## Setup and Deploy
 
@@ -15,8 +15,10 @@ Install node packages with npm
 
 ## Setup Environment Variables
 
+```bash
 SUPABASE_URL=<your-supabase-url>
 SUPABASE_ANON_KEY=<your-anon-key>
+```
 
 ## Run Locally
 
@@ -29,20 +31,20 @@ node server.js
 
 ## Demo CURL commands
 
-#### For Post '/notes'
+# For Post '/notes'
 
-# Create a new note
+#### Create a new note
 
-curl -X POST https://<your-project>.functions.supabase.co/post_notes \
+curl -X POST https://your-project.functions.supabase.co/post_notes \
  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
  -H "Content-Type: application/json" \
  -d '{"title": "First Note", "content": "This is a test note."}'
 
-#### For Get '/notes'
+# For Get '/notes'
 
-# Get all notes
+#### Get all notes
 
-curl -X GET https://<your-project>.functions.supabase.co/get_notes \
+curl -X GET https://your-project.functions.supabase.co/get_notes \
  -H "Authorization: Bearer YOUR_JWT_TOKEN"
 
 ## Schema Design – Why?
